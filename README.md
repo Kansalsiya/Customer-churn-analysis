@@ -35,7 +35,7 @@ Instead of treating machine learning as the final goal, the notebook emphasizes:
 
 **Dataset:** IBM Telco Customer Churn Dataset
 
-The notebook automatically loads the dataset, making it easy to run directly in Google Colab.
+The notebook automatically loads the dataset, making it easy to run directly in Google Colab. The project also stores the cleaned/processed data in a SQLite database file for SQL-based analysis and querying.
 
 Dataset contains information such as:
 
@@ -53,6 +53,7 @@ Dataset contains information such as:
 ## 🛠️ Technologies Used
 
 - Python
+- SQL / SQLite
 - Google Colab
 - Pandas
 - NumPy
@@ -85,13 +86,14 @@ Performance is evaluated using metrics such as:
 
 1. Data Loading
 2. Data Cleaning
-3. Exploratory Data Analysis
-4. Feature Engineering
-5. Data Preprocessing
-6. Model Building
-7. Model Evaluation
-8. Business Insights
-9. Strategic Recommendations
+3. SQL database setup and querying
+4. Exploratory Data Analysis
+5. Feature Engineering
+6. Data Preprocessing
+7. Model Building
+8. Model Evaluation
+9. Business Insights
+10. Strategic Recommendations
 
 ---
 
@@ -125,10 +127,14 @@ Based on the analysis, the project proposes strategies including:
 ```
 Customer-Churn-Analytics/
 │
-├── Customer_Churn_Analytics.ipynb
+├── customer-churn-analysis.ipynb
+├── customer_churn.db
 ├── README.md
-└── requirements.txt (optional)
+├── requirements.txt
+└── .gitignore
 ```
+
+The project includes a SQLite database file, `customer_churn.db`, which can be queried with SQL for exploratory data analysis or validation against the notebook workflow.
 
 ---
 
